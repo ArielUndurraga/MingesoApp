@@ -1,0 +1,29 @@
+<div class="container">
+  <form ng-submit="submit()" ng-controller="AddStudentController">
+    <div class="form-group">
+      <div class="col-md-4 col-md-offset-4">
+      <label for="rut">RUT:</label>
+      <input type="text" ng-model="newStudent.rut" class="form-control" id="rut" placeholder="Ejemplo: 19.308.148-7" name="rut" required>
+    </div>
+    </div>
+    <div class="form-group col-md-4 col-md-offset-4">
+      <label for="name">Nombre:</label>
+      <input type="text" ng-model="newStudent.name" class="form-control" id="name" placeholder="Ejemplo: Juan" name="name" required>
+    </div>
+    <div class="form-group col-md-4 col-md-offset-4">
+      <label for="email">Email:</label>
+      <input type="email" ng-model="newStudent.email" class="form-control" id="email" placeholder="Ejemplo: ejemplo@usach.cl" name="email" required>
+    </div>
+    <div class="form-group col-md-4 col-md-offset-4">
+      <label for="career">Carrera:</label>
+      <input type="text" ng-model="newStudent.career" class="form-control" id="career" placeholder="Ejemplo: Ingenieria Ambiental" name="career" required>
+    </div>
+    <div class="form-group col-md-4 col-md-offset-4">
+      <label for="entry_year">Año de Ingreso:</label>
+      <input type="number" ng-model="newStudent.entryYear" class="form-control" id="entry_year" placeholder="Ejemplo: 2016" name="entry_year" required>
+    </div>
+    <div class="form-group col-md-4 col-md-offset-4">
+      <input type="submit" id="submit" class="btn btn-default" value="Agregar">
+    </div>
+  </form>
+</div>
